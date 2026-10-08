@@ -1,0 +1,21 @@
+---
+title: "Budget and Revenue"
+---
+
+This page examines the relationship between a film's budget and its worldwide revenue. Figure @fig-budget-revenue shows whether films with larger budgets tend to generate higher worldwide revenues.
+
+```{python}
+#| label: fig-budget-revenue
+#| fig-cap: "Film budget versus worldwide revenue"
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+plt.scatter(films["budget_musd"], films["revenue_musd"])
+plt.xlabel("Budget (USD millions)")
+plt.ylabel("Worldwide Revenue (USD millions)")
+plt.title("Film Budget vs. Worldwide Revenue")
+plt.show()
+```

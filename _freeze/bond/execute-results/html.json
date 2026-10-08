@@ -1,0 +1,12 @@
+{
+  "hash": "6dc9e8f9a61dfe6145a392e7db04f090",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"The Bond Films\"\n---\n\n::: {#49364368 .cell execution_count=1}\n``` {.python .cell-code}\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nbond = films[films[\"franchise\"] == \"James Bond\"]\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Worldwide Revenue (USD millions)\")\nplt.title(\"James Bond Worldwide Revenue Over Time\")\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](bond_files/figure-html/cell-2-output-1.png){width=602 height=450}\n:::\n:::\n\n\nThe first James Bond film in this dataset was released in `{{ int(bond[\"year\"].min()) }}`, and the last was released in `{{ int(bond[\"year\"].max()) }}`.\n\n",
+    "supporting": [
+      "bond_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

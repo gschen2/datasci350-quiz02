@@ -1,0 +1,20 @@
+---
+title: "The Bond Films"
+---
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+films = pd.read_csv("films.csv")
+
+bond = films[films["franchise"] == "James Bond"]
+
+plt.plot(bond["year"], bond["revenue_musd"])
+plt.xlabel("Year")
+plt.ylabel("Worldwide Revenue (USD millions)")
+plt.title("James Bond Worldwide Revenue Over Time")
+plt.show()
+```
+
+The first James Bond film in this dataset was released in `{{ int(bond["year"].min()) }}`, and the last was released in `{{ int(bond["year"].max()) }}`.

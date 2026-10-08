@@ -1,0 +1,30 @@
+ git clone https://github.com/gschen2/datasci350-quiz02.git
+cd datasci350-quiz02
+git status
+ls
+touch commands.txt
+code commands.txt
+
+1. 
+quarto create project website .
+
+2. 
+git add .gitignore
+git commit -m "Add gitignore"
+
+3.
+No terminal commands — edited _quarto.yml
+
+4. 
+No terminal commands — edited _quarto.yml and deleted about.qmd
+
+5. 
+No terminal commands - edited _quarto.yml
+
+6.
+No terminal commands - edited index.qmd
+
+7. 
+quarto render
+
+8.

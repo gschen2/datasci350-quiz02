@@ -1,0 +1,13 @@
+---
+title: "Box Office Numbers"
+---
+
+This website analyzes a dataset of 104 films from 1980 to 2025. The dataset includes film titles, release years, franchises, approximate budgets and worldwide revenues in millions of dollars, runtimes, and IMDb ratings.
+
+The analysis explores the relationship between budget and revenue, runtime and ratings, and the revenue history of James Bond films.
+
+- [Budget and Revenue](budget-revenue.qmd)
+- [Runtime and Ratings](runtime-rating.qmd)
+- [The Bond Films](bond.qmd)
+
+AI tools used during this quiz: ChatGPT.
