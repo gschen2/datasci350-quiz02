@@ -25,6 +25,6 @@
     "href": "index.html",
     "title": "Box Office Numbers",
     "section": "",
-    "text": "This website analyzes a dataset of 104 films from 1980 to 2025. The dataset includes film titles, release years, franchises, approximate budgets and worldwide revenues in millions of dollars, runtimes, and IMDb ratings.\nThe analysis explores the relationship between budget and revenue, runtime and ratings, and the revenue history of James Bond films.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI tools used during this quiz: ChatGPT."
+    "text": "This website analyzes a dataset of 104 films from 1980 to 2025. The dataset includes film titles, release years, franchises, approximate budgets and worldwide revenues in millions of dollars, runtimes, and IMDb ratings.\nThe analysis explores the relationship between budget and revenue, runtime and ratings, and the revenue history of James Bond films.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI tools used during this quiz: ChatGPT. I used ChatGPT for help with troubleshooting, understanding Git and Quarto commands, and guidance on the Python analysis and website setup. I reviewed, wrote, and ran all code and commands myself."
   }
 ]
