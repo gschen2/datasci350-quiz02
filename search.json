@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "runtime-rating.html",
+    "href": "runtime-rating.html",
+    "title": "Runtime and Ratings",
+    "section": "",
+    "text": "The relationship between film runtime and IMDb rating is shown in Figure Figure 1. This plot allows us to examine whether longer or shorter films tend to receive higher ratings.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films[\"runtime_min\"], films[\"imdb_rating\"])\nplt.xlabel(\"Runtime (minutes)\")\nplt.ylabel(\"IMDb Rating\")\nplt.title(\"Film Runtime vs. IMDb Rating\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Film runtime versus IMDb rating\n\n\n\n\n\n\nMean IMDb Rating by Decade\n\nfilms[\"decade\"] = films[\"year\"] // 10 * 10\nfilms.groupby(\"decade\")[\"imdb_rating\"].mean().round(2)\n\ndecade\n1980    8.01\n1990    7.70\n2000    7.94\n2010    7.83\n2020    7.44\nName: imdb_rating, dtype: float64"
+  },
+  {
+    "objectID": "budget-revenue.html",
+    "href": "budget-revenue.html",
+    "title": "Budget and Revenue",
+    "section": "",
+    "text": "This page examines the relationship between a film’s budget and its worldwide revenue. Figure Figure 1 shows whether films with larger budgets tend to generate higher worldwide revenues.\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nplt.scatter(films[\"budget_musd\"], films[\"revenue_musd\"])\nplt.xlabel(\"Budget (USD millions)\")\nplt.ylabel(\"Worldwide Revenue (USD millions)\")\nplt.title(\"Film Budget vs. Worldwide Revenue\")\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Film budget versus worldwide revenue"
+  },
+  {
+    "objectID": "bond.html",
+    "href": "bond.html",
+    "title": "The Bond Films",
+    "section": "",
+    "text": "import pandas as pd\nimport matplotlib.pyplot as plt\n\nfilms = pd.read_csv(\"films.csv\")\n\nbond = films[films[\"franchise\"] == \"James Bond\"]\n\nplt.plot(bond[\"year\"], bond[\"revenue_musd\"])\nplt.xlabel(\"Year\")\nplt.ylabel(\"Worldwide Revenue (USD millions)\")\nplt.title(\"James Bond Worldwide Revenue Over Time\")\nplt.show()\n\n\n\n\n\n\n\n\nThe first James Bond film in this dataset was released in { int(bond[\"year\"].min()) }, and the last was released in { int(bond[\"year\"].max()) }."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Box Office Numbers",
+    "section": "",
+    "text": "This website analyzes a dataset of 104 films from 1980 to 2025. The dataset includes film titles, release years, franchises, approximate budgets and worldwide revenues in millions of dollars, runtimes, and IMDb ratings.\nThe analysis explores the relationship between budget and revenue, runtime and ratings, and the revenue history of James Bond films.\n\nBudget and Revenue\nRuntime and Ratings\nThe Bond Films\n\nAI tools used during this quiz: ChatGPT."
+  }
+]
