@@ -28,3 +28,26 @@ No terminal commands - edited index.qmd
 quarto render
 
 8.
+quarto render
+
+9.
+quarto render
+
+10.
+ls
+explorer _site
+git status
+git add .
+git status
+git commit -m "Add site pages and freeze"
+
+11.
+quarto publish gh-pages
+
+12.
+No terminal commands - checked if link worked
+
+13. 
+git add commands.txt
+git commit -m "Add command log"
+git push
