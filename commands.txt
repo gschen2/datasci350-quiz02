@@ -51,3 +51,17 @@ No terminal commands - checked if link worked
 git add commands.txt
 git commit -m "Add command log"
 git push
+
+Bonus 1.
+Edited styles.css to change the link colour and font.
+quarto render
+explorer _site
+
+Bonus 2.
+Edited _quarto.yml to add paired light and dark themes.
+quarto render
+explorer _site
+quarto publish gh-pages
+git add styles.css _quarto.yml commands.txt
+git commit -m "Add bonus styling and themes"
+git push

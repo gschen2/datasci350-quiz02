@@ -10,4 +10,4 @@ The analysis explores the relationship between budget and revenue, runtime and r
 - [Runtime and Ratings](runtime-rating.qmd)
 - [The Bond Films](bond.qmd)
 
-AI tools used during this quiz: ChatGPT.
+AI tools used during this quiz: ChatGPT. I used ChatGPT for help with troubleshooting, understanding Git and Quarto commands, and guidance on the Python analysis and website setup. I reviewed, wrote, and ran all code and commands myself.
